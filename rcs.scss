@@ -1,0 +1,43 @@
+$baccolor : #cccc;
+$shadcolor: #333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    background-color: $baccolor;
+    .choose{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .choose-1{
+            margin: 1em 1em 0;
+            outline: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 3em;
+            transition: 150ms;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+    }
+    .score{
+        margin-top: 1em;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        font-size: 2.5em;
+        .score-result{
+            font-size: 50%;
+            margin-left: 0.2em;
+            color: $shadcolor;
+        }
+    }   
+}
+
+

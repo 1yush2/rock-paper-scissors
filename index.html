@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="rcs.css">
+    <script defer src="rcs.js"></script>
 </head>
 <body>
     <div class="choose">
-        <button class="choose-1">👊</button>
-        <button class="choose-1">🖐</button>
-        <button class="choose-1">✌️</button>
+        <button class="choose-opt" data-works="Rocks">👊</button>
+        <button class="choose-opt" data-works="Papers">🖐</button>
+        <button class="choose-opt" data-works="Scissors">✌️</button>
     </div>
     <div class="score">
         <div>
-            You
+            <p id="nem"></p>
             <span class="score-result">0</span>
         </div>
         <div>
             Computer
             <span class="score-result">0</span>
         </div>
+        <!-- <div class="score-select winner">👊</div>
+        <div class="score-select">✌️</div> -->
     </div>
 </body>
 </html>

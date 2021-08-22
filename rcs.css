@@ -20,7 +20,7 @@ body .choose {
       flex-wrap: wrap;
 }
 
-body .choose .choose-1 {
+body .choose .choose-opt {
   margin: 1em 1em 0;
   outline: none;
   border: none;
@@ -31,7 +31,7 @@ body .choose .choose-1 {
   transition: 150ms;
 }
 
-body .choose .choose-1:hover {
+body .choose .choose-opt:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
@@ -53,4 +53,13 @@ body .score .score-result {
   font-size: 50%;
   margin-left: 0.2em;
   color: #333;
+}
+
+body .score .score-select {
+  opacity: 0.5;
+}
+
+body .score .score-select.winner {
+  opacity: 1;
+  font-size: 150%;
 }

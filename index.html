@@ -9,19 +9,20 @@
     <script defer src="rcs.js"></script>
 </head>
 <body>
+    <div class="headtext">Play Rock paper and Scissors</div>
     <div class="choose">
-        <button class="choose-opt" data-works="Rocks">👊</button>
-        <button class="choose-opt" data-works="Papers">🖐</button>
+        <button class="choose-opt" data-works="Rock">👊</button>
+        <button class="choose-opt" data-works="Paper">🖐</button>
         <button class="choose-opt" data-works="Scissors">✌️</button>
     </div>
     <div class="score">
-        <div>
-            <p id="nem"></p>
-            <span class="score-result">0</span>
+        <div class="bug-fix">
+            <p id="nem">You</p>
+            <span class="score-result" data-my-score>0</span>
         </div>
-        <div>
-            Computer
-            <span class="score-result">0</span>
+        <div class="bug-fix" data-after-computer>
+           <p>Computer</p> 
+            <span class="score-result" data-comp-score>0</span>
         </div>
         <!-- <div class="score-select winner">👊</div>
         <div class="score-select">✌️</div> -->

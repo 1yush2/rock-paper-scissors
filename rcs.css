@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Rampart+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,17 @@
 }
 
 body {
-  background-color: #cccc;
+  background-color: #ccc;
+  font-family: 'Playfair Display', serif;
+}
+
+body .headtext {
+  text-align: center;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin-top: 2%;
+  font-family: 'Rampart One', cursive;
 }
 
 body .choose {
@@ -47,6 +58,16 @@ body .score {
       grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   font-size: 2.5em;
+}
+
+body .score .bug-fix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 body .score .score-result {
